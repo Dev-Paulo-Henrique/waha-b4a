@@ -41,8 +41,7 @@ async function startServer() {
         authStrategy: new LocalAuth(),
         puppeteer: {
             headless: 'new', // Usando o novo modo headless
-            args: ['--no-sandbox', '--disable-setuid-sandbox'],
-            executablePath: chromiumPath // AQUI ESTÁ A JUNÇÃO!
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
         }
     });
 
